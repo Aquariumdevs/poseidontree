@@ -1,0 +1,17 @@
+[package]
+name = "simple_example"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "simple_example"
+crate-type = ["cdylib"]
+
+[dependencies]
+num-bigint = "0.4"
+num = "0.4"
+once_cell = "1.8"
+lazy_static = "1.4"
+ark-ff = { version = "0.3.0", features = ["parallel", "asm"] }
+mina-curves = { git = "https://github.com/o1-labs/proof-systems.git" } 
+mina-poseidon = { git = "https://github.com/o1-labs/proof-systems.git" } 
